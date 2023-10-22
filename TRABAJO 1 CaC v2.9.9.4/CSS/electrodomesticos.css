@@ -1,0 +1,83 @@
+#electrodomesticos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(23, 107, 135);
+   /* background-color: white; */
+    column-gap: 100px;
+    row-gap: 50px;
+    padding: 40px;
+    text-align: center;
+}
+
+#electrodomesticos div{
+/* background-color: rgb(238, 238, 238); */
+padding: 25px;
+padding-bottom: 35px;
+border-radius: 20px;
+border: solid 1px;
+background-image: linear-gradient(rgba(220, 220, 220, 0.648),rgb(238, 238, 238))
+}
+
+#electrodomesticos div:hover{
+scale:1.02;
+}
+
+#electrodomesticos img{
+    width: 300px;
+    box-shadow: 5px 5px 10px rgb(5, 59, 80);
+}
+
+#electrodomesticos button{
+    background-image: linear-gradient(rgb(23, 107, 135),rgb(100, 204, 197));
+    width: 70%;
+    height: 10%;
+    border-radius: 15px;
+    font-size: large;
+    font-weight: 700;
+}
+
+#electrodomesticos button:hover{
+    background-image: linear-gradient(to right,rgb(100, 204, 197), rgb(23, 107, 135));
+
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    background-color: rgb(44, 43, 47);
+   /*  background-color: rgb(23, 107, 135); */
+}
+
+
+
+@media(max-width:800px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+    
+    #electrodomesticos{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media(max-width:500px){
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: 0fr 1fr 0fr;
+    }
+
+    #electrodomesticos div{
+
+        padding-bottom: 35px;
+        width: 300px;
+        }
+}
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/registroCuenta.css">
+    <link rel="stylesheet" href="./CSS/nosotros.css">
+    <!-- <link rel="stylesheet" href="./CSS/index.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:
+ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Familia Electropoder</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <!---------------------------------------------------------------------------------------------->
+        <!-------------------------------------------Header--------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <header class="encabezado">
+
+            <div class="encabezado-izq">
+                <img src="electropowerLeft.png" alt="logoIzquierda">
+            </div>
+
+            <div class="encabezado-centro">
+                <h1>Electropoder</h1>
+                <h3>Casa de electrodomésticos</h3>
+            </div>
+
+
+            <div class="encabezado-derecha">
+                <img src="electropowerRight.png" alt="logoDerecha">
+            </div>
+
+
+
+        </header>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!-------------------------------------Barra de navegacion-------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div id="contenedor-barra">
+
+            <!-- <div id="contenedor-hamburguesa"> -->
+            <label id="barra-hamburguesa" for="barra-check">
+                <span id="barra-abrir">&#9776;</span>
+                <!-- <span id="barra-cerrar">X</span> -->
+            </label>
+            <input type="checkbox" id="barra-check">
+            <!-- </div> -->
+
+            <nav class="barra-navegacion">
+
+
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li id="cat">
+                        <!--                 <label for="categorias">Categorias</label>
+                <select id="categorias">
+                    <option value="1">Limpieza</option>
+                    <option value="2">Televisores</option>
+                    <option value="3">Cocina</option>
+                </select> -->
+
+
+
+                        <a href="#">Categorias</a>
+
+                        <div id="categorias">
+                            <ul>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosLimpieza">Limpieza</a>
+                                </li>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosTelevisores">Televisores</a>
+                                </li>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosCocina">Cocina</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="" id="desplegar-registro">Registrarme</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!-----------------------------------Formulario registro---------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+
+        <div id="contenedor-emergente-form" class="contenedor-formulario">
+            <div id="titulo-y-cruz">
+                <h1>Crea tu cuenta y obtené beneficios exclusivos!</h1>
+                <a href="#" id="cruz">X</a>
+            </div>
+            <form action="" class="formulario">
+                <div class="form-item">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="contra">Contraseña</label><br>
+                    <input type="password" id="contra" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date" id="nacimiento" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="mail">E-Mail</label><br>
+                    <input type="text" id="mail" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="nacionalidad">Pais</label><br>
+
+                    <select id="nacionalidad" class="input-formulario">
+                        <option value="0">Seleccionar Pais</option>
+
+                    </select>
+                </div>
+
+                <div class="form-item-7">
+                    <button type="submit" id="enviar" class="boton-submit">Registrarme</button>
+
+                </div>
+            </form>
+        </div>
+
+
+        <article class="articulo1">
+            <div class="contenedor-artic1">
+                <div>
+                    <h2>¿Quienes somos?</h2>
+                    <p>
+                        Fundada por los hermanos Michael y Tom Faraday en 1834, Electropoder se abrió
+                        poco a poco camino en el mundo de los electrodomésticos, haciendo primero
+                        hincapié en los principios físicos que harían posible su funcionamiento.
+                    </p>
+                    <p> Año tras año se fueron sumando más y más personas a la dirigencia, siempre
+                        encolumnados detrás de ideales simples pero valiosos. En la actualidad,
+                        las familias Faraday, Maxwell, Tesla, Ohm y Lorentz, se encargan de guiar los
+                        pasos de lo que a día de hoy es sin lugar a dudas una marca de renombre.
+
+                    </p>
+                </div>
+                <div>
+                    <img src="losFaraday.jpg" alt="Los fundadores">
+                </div>
+            </div>
+        </article>
+
+
+        <article class="articulo2">
+            <div class="contenedor-artic2">
+                <div>
+                    <h2>Familia y cooperación</h2>
+                    <p>
+                        En Electropoder solemos recurrir a una frase para describrir nuestra filosofía
+                        de vida: "Todos para uno, y uno para todos." Así es que nos consideramos una gran
+                        familia, de la que forman parte cada uno de los eslabones de esta empresa,
+                        así como también nuestros clientes, acaso el eslabón mas importante de todos.
+                    </p>
+                </div>
+                <div>
+                    <img src="todosPara.jpg" alt="Cooperación como filosofía">
+                </div>
+            </div>
+        </article>
+
+        <article class="articulo3">
+            <div class="contenedor-artic3">
+                <div>
+                    <h2>¿Qué buscamos?</h2>
+                    <p>
+                        El objetivo de Electropoder se ha mantenido imperturbado desde aquella pequeña
+                        pero luminosa idea de los hermanos Faraday. Se trata de hacer del mundo un lugar
+                        más cómodo y agradable para el ser humano, creando y distribuyendo productos
+                        tanto de invención propia como ajena, con el fin de llegar a cada rincón del planeta
+                        como una opción accesible y de calidad. Para nosotros es muy importante que el cliente
+                        se vaya con una sonrisa.
+                    </p>
+                </div>
+                <div>
+                    <img src="ventaFeliz.jpg" alt="Clientes contentos">
+                </div>
+            </div>
+        </article>
+
+
+        <footer class="pie">
+            <div class="texto">
+
+            </div>
+            <div class="icons">
+                <a href=""><span class="fab fa-instagram" title="Instagram"></span></a>
+                <a href=""><span class="fab fa-facebook" title="Facebook"></span></a>
+                <a href=""><span class="fab fa-twitter" title="Twitter"></span></a>
+                <a href=""><span class="fas fa-envelope" title="Correo"></span></a>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/validacionFormContacto.js"></script>
+    <script src="https://kit.fontawesome.com/f78b578feb.js" crossorigin="anonymous"></script>
+    <script src="./js/paisesFetch.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/registroCuenta.css">
+    <link rel="stylesheet" href="./CSS/formularioContacto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:
+ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header class="encabezado">
+
+            <div class="encabezado-izq">
+                <img src="electropowerLeft.png" alt="logoIzquierda">
+            </div>
+
+            <div class="encabezado-centro">
+                <h1>Electropoder</h1>
+                <h3>Casa de electrodomésticos</h3>
+            </div>
+
+
+            <div class="encabezado-derecha">
+                <img src="electropowerRight.png" alt="logoDerecha">
+            </div>
+
+
+
+        </header>
+
+
+        <div id="contenedor-barra">
+
+
+            <label id="barra-hamburguesa" for="barra-check">
+                <span id="barra-abrir">&#9776;</span>
+
+            </label>
+            <input type="checkbox" id="barra-check">
+
+            <nav class="barra-navegacion">
+
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li id="cat">
+
+
+
+                        <a href="#">Categorias</a>
+
+                        <div id="categorias">
+                            <ul>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosLimpieza">Limpieza</a>
+                                </li>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosTelevisores">Televisores</a>
+                                </li>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosCocina">Cocina</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="" id="desplegar-registro">Registrarme</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!-----------------------------------Formulario registro---------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+
+    <div id="contenedor-emergente-form" class="contenedor-formulario">
+        <div id="titulo-y-cruz">
+            <h1>Crea tu cuenta y obtené beneficios exclusivos!</h1>
+            <a href="#" id="cruz">X</a>
+        </div>
+
+        <form action="" class="formulario">
+            <div class="form-item">
+                <label for="nombre">Nombre</label><br>
+                <input type="text" id="nombre" class="input-formulario"><br>
+            </div>
+
+            <div class="form-item">
+                <label for="apellido">Apellido</label><br>
+                <input type="text" id="apellido" class="input-formulario"><br>
+            </div>
+
+            <div class="form-item">
+                <label for="contra">Contraseña</label><br>
+                <input type="password" id="contra" class="input-formulario"><br>
+            </div>
+
+            <div class="form-item">
+                <label for="nacimiento">Fecha de nacimiento</label><br>
+                <input type="date" id="nacimiento" class="input-formulario"><br>
+            </div>
+
+            <div class="form-item">
+                <label for="mail">E-Mail</label><br>
+                <input type="text" id="mail" class="input-formulario"><br>
+            </div>
+
+            <div class="form-item">
+                <label for="nacionalidad">Pais</label><br>
+
+                <select id="nacionalidad" class="input-formulario">
+                    <option value="0">Seleccionar Pais</option>
+
+                </select>
+            </div>
+
+            <div class="form-item-7">
+                <button type="submit" id="enviar" class="boton-submit">Registrarme</button>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------->
+    <!---------------------------------Formulario de contacto--------------------------------------->
+    <!---------------------------------------------------------------------------------------------->
+
+    <div class="contenedor-gigante">
+        <div class="contenedor-izquierda">
+
+        </div>
+
+
+        <div id="contenedor-form-c" class="contenedor-formulario-contacto">
+            <h1>Envianos tus consultas de manera rápida y efectiva</h1>
+
+            <h3>La respuesta será a la velocidad del rayo</h3>
+
+            <div style="display: flex; justify-content: center;">
+                <form action="" class="formulario-contacto">
+                    <div class="item-contacto">
+                        <label for="nombre-c">Nombre</label><br>
+                        <input type="text" id="nombre-c" class="input-formulario-c"><br>
+                    </div>
+
+                    <div class="item-contacto">
+                        <label for="apellido-c">Apellido</label><br>
+                        <input type="text" id="apellido-c" class="input-formulario-c"><br>
+                    </div>
+
+                    <div class="item-contacto item-contacto-doble">
+                        <label for="mail-c">E-Mail</label><br>
+                        <input type="email" id="mail-c" class="input-formulario-c"><br>
+                    </div>
+
+                    <div class="item-contacto item-contacto-doble">
+                        <label for="asunto-c">Asunto</label><br>
+                        <select name="" id="asunto-c" class="input-formulario-c">
+                            <option value="0">Seleccionar asunto</option>
+                            <option value="1">Varios</option>
+                            <option value="2">Consultas</option>
+                            <option value="3">Quejas</option>
+                        </select>
+                        <br>
+                    </div>
+
+                    <div class="item-contacto item-contacto-doble">
+                        <label for="consulta-c">Consulta</label><br>
+                        <textarea cols="30" rows="10" id="consulta-c" class="input-formulario-c"></textarea><br>
+                    </div>
+
+                    <div class="item-contacto item-contacto-enviar">
+                        <button type="submit" id="enviar-c" class="boton-submit">Enviar</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+
+        <div class="contenedor-derecha">
+            <footer class="pie">
+                <div class="texto">
+
+                </div>
+                <div class="icons">
+                    <a href=""><span class="fab fa-instagram" title="Instagram"></span></a>
+                    <a href=""><span class="fab fa-facebook" title="Facebook"></span></a>
+                    <a href=""><span class="fab fa-twitter" title="Twitter"></span></a>
+                    <a href=""><span class="fas fa-envelope" title="Correo"></span></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/validacionFormContacto.js"></script>
+    <script src="./js/paisesFetch.js"></script>
+    <script src="https://kit.fontawesome.com/f78b578feb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

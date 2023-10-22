@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electropoder</title>
+
+    <link rel="stylesheet" href="./CSS/general.css">
+    <link rel="stylesheet" href="./CSS/registroCuenta.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:
+ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+
+
+        <!---------------------------------------------------------------------------------------------->
+        <!-------------------------------------------Header--------------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+        <header class="encabezado">
+
+            <div class="encabezado-izq">
+                <img src="electropowerLeft.png" alt="logoIzquierda">
+            </div>
+
+            <div class="encabezado-centro">
+                <h1>Electropoder</h1>
+                <h3>Casa de electrodomésticos</h3>
+            </div>
+
+
+            <div class="encabezado-derecha">
+                <img src="electropowerRight.png" alt="logoDerecha">
+            </div>
+
+
+
+        </header>
+
+        <!---------------------------------------------------------------------------------------------->
+        <!-------------------------------------Barra de navegacion-------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+        <div id="contenedor-barra">
+
+
+                <label id="barra-hamburguesa" for="barra-check">
+                    <span id="barra-abrir">&#9776;</span>
+
+                </label>
+                <input type="checkbox" id="barra-check">
+
+
+            <nav class="barra-navegacion">
+
+
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+
+                    <li id="cat">
+
+
+
+
+                        <a href="#">Categorias</a>
+
+                        <div id="categorias">
+                            <ul>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosLimpieza">Limpieza</a>
+                                </li>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosTelevisores">Televisores</a>
+                                </li>
+                                <li>
+                                    <a href="electrodomesticos.html" class="categoria-boton"
+                                        id="electrodomesticosCocina">Cocina</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="" id="desplegar-registro">Registrarme</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!-----------------------------------Formulario registro---------------------------------------->
+        <!---------------------------------------------------------------------------------------------->
+
+
+        <div id="contenedor-emergente-form" class="contenedor-formulario">
+            <div id="titulo-y-cruz">
+                <h1>Crea tu cuenta y obtené beneficios exclusivos!</h1>
+                <a href="#" id="cruz">X</a>
+            </div>
+            <form action="" class="formulario">
+                <div class="form-item">
+                    <label for="nombre">Nombre</label><br>
+                    <input type="text" id="nombre" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="apellido">Apellido</label><br>
+                    <input type="text" id="apellido" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="contra">Contraseña</label><br>
+                    <input type="password" id="contra" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date" id="nacimiento" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="mail">E-Mail</label><br>
+                    <input type="text" id="mail" class="input-formulario"><br>
+                </div>
+
+                <div class="form-item">
+                    <label for="nacionalidad">Pais</label><br>
+                    
+                    <select id="nacionalidad" class="input-formulario">
+                        <option value="0">Seleccionar Pais</option>
+
+                    </select>
+                </div>
+
+                <div class="form-item-7">
+                    <button type="submit" id="enviar" class="boton-submit">Registrarme</button>
+
+                </div>
+            </form>
+        </div>
+
+
+
+
+        <aside class="aside">
+            <div>
+                <p>Envíos gratis a todo el pais!!</p>
+            </div>
+        </aside>
+
+        <main class="principal">
+
+
+            <div class="carrusel">
+                <h2>Algunos de nuestros productos</h2>
+                <div class="imagenes">
+                    <img src="" alt="" id="imagen1">
+                    <img src="" alt="" id="imagen2">
+                    <img src="" alt="" id="imagen3">
+                    <img src="" alt="" id="imagen4">
+                    <img src="" alt="" id="imagen5">
+                </div>
+
+
+                <ul class="puntos">
+                    <li class="punto"></li>
+                    <li class="punto activo"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
+            <div class="anuncio">
+                <p>Registrate y obtené beneficios especiales</p>
+            </div>
+        </main>
+
+        <article class="articulo">
+            <div>
+                <h2>Nuestra casa</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d798.9188
+            161974168!2d-59.86419016409405!3d-36.778357034240905!2m3!1f0!2f0!3f0!3m2!1i1024!2i7
+            68!4f13.1!3m3!1m2!1s0x9594277543e945e5%3A0xba6f8f9d81d65bd9!2sCasa%20Silvia%20(Art.%20p
+            ara%20el%20hogar)!5e0!3m2!1sen!2sar!4v1697498347790!5m2!1sen!2sar" width="500" height="400"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="infoContacto">
+                <h3>Información de contacto</h3>
+                <p><span>Dirección:</span> San Martín 474, Azul, Buenos Aires</p>
+                <p><span>E-Mail:</span> electropoder@gmail.com</p>
+                <p><span>Telefono:</span> 222-333-444</p>
+                <p><span></span>Visitá nuestras redes sociales en el pie de página</p>
+            </div>
+        </article>
+        <footer class="pie">
+            <div class="texto">
+
+            </div>
+            <div class="icons">
+                <a href=""><span class="fab fa-instagram" title="Instagram"></span></a>
+                <a href=""><span class="fab fa-facebook" title="Facebook"></span></a>
+                <a href=""><span class="fab fa-twitter" title="Twitter"></span></a>
+                <a href=""><span class="fas fa-envelope" title="Correo"></span></a>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/carrusel.js"></script>
+    <script src="./js/validacionFormContacto.js"></script>
+    <script src="./js/paisesFetch.js"></script>
+    <script src="https://kit.fontawesome.com/f78b578feb.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

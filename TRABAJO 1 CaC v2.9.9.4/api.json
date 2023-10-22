@@ -1,0 +1,112 @@
+[
+    {
+      "categoria": "televisor",
+      "nombre": "Televisor Samsung 4K",
+      "precio": 799000.99,
+      "imagen": "./Imagenes api/tv1.jpg"
+    },
+    {
+      "categoria": "televisor",
+      "nombre": "Televisor LG OLED",
+      "precio": 129900.99,
+      "imagen": "./Imagenes api/tv2.jpg"
+    },
+    {
+      "categoria": "televisor",
+      "nombre": "Televisor Sony 55 pulgadas",
+      "precio": 899000.99,
+      "imagen": "./Imagenes api/tv3.jpg"
+    },
+    {
+      "categoria": "televisor",
+      "nombre": "Televisor TCL Smart TV",
+      "precio": 549000.99,
+      "imagen": "./Imagenes api/tv4.jpg"
+    },
+    {
+      "categoria": "televisor",
+      "nombre": "Televisor Philips 65 pulgadas",
+      "precio": 109900.99,
+      "imagen": "./Imagenes api/tv5.jpg"
+    },
+    {
+      "categoria": "televisor",
+      "nombre": "Televisor LG Smart TV 65 pulgadas",
+      "precio": 550000.99,
+      "imagen": "./Imagenes api/tv6.jpg"
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Aspiradora Dyson V11",
+      "precio": 599000.99,
+      "imagen": "./Imagenes api/aspiradora1.jpg"
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Robot Limpiador iRobot Roomba",
+      "precio": 349000.99,
+      "imagen": "./Imagenes api/robot limpiador.jpg"
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Limpiador a Vapor Kärcher",
+      "precio": 199000.99,
+      "imagen": "./Imagenes api/Limpiador a Vapor Kärcher.jpg"
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Aspiradora Nuevo Mundo",
+      "precio": 690000.99,
+      "imagen": "./Imagenes api/aspiradora2.jpg"
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Aspiradora Striker v3",
+      "precio": 690000.99,
+      "imagen": "./Imagenes api/aspiradora3.jpg"
+    },
+    {
+      "categoria": "limpieza",
+      "nombre": "Limpiadora de vacío",
+      "precio": 129000.99,
+      "imagen": "./Imagenes api/limpiadora de vacio.jpg"
+    },
+    {
+      "categoria": "cocina",
+      "nombre": "Horno de Convección Breville",
+      "precio": 299000.99,
+      "imagen": "./Imagenes api/microondas.jpg"
+    },
+    {
+      "categoria": "cocina",
+      "nombre": "Licuadora Vitamix Professional",
+      "precio": 449000.99,
+      "imagen": "./Imagenes api/licuadora.jpg"
+    },
+    {
+      "categoria": "cocina",
+      "nombre": "Cafetera Nespresso Vertuo",
+      "precio": 179000.99,
+      "imagen": "./Imagenes api/cafetera1.jpg"
+    },
+    {
+      "categoria": "cocina",
+      "nombre": "Freidora de Aire Cosori",
+      "precio": 129000.99,
+      "imagen": "./Imagenes api/freidora.jpg"
+    },
+    {
+      "categoria": "cocina",
+      "nombre": "Cafetera Nespresso Max Pro",
+      "precio": 129000.99,
+      "imagen": "./Imagenes api/cafetera2.jpg"
+    },
+    {
+      "categoria": "cocina",
+      "nombre": "Batidora de Pie KitchenAid",
+      "precio": 349000.99,
+      "imagen": "./Imagenes api/batidora.jpg"
+    }
+    
+  ]
+  

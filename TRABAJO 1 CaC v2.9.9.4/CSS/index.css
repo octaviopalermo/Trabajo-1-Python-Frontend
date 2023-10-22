@@ -1,0 +1,177 @@
+
+
+.encabezado{
+    grid-area: encabezado;
+}
+
+#contenedor-barra{
+    grid-area: contenedor-barra;
+}
+
+.contenedor-formulario {
+    grid-area: contenedor-formulario;
+}
+
+.articulo {
+    grid-area: articulo;
+    display:flex;
+    flex-direction: column;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: rgb(23, 107, 135);
+    color: white;
+}
+main {
+    grid-area: main;
+    background-color: rgb(238, 238, 238);
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.pie {
+    grid-area: footer;
+    grid-column: span 2;
+}
+
+.contenedor{
+    display: grid;
+    
+   grid-template: repeat(6,auto) / 50% 50%;
+    grid-template-areas: "encabezado encabezado"
+                        "contenedor-barra contenedor-barra"
+                        "aside aside"
+                        "articulo main"
+                        "footer footer"
+}
+
+@media(max-width:1000px){
+    .contenedor{
+        
+        
+       grid-template: repeat(6,auto) / 100%;
+        grid-template-areas: "encabezado"
+                            "contenedor-barra"
+                            "aside"
+                            "articulo"
+                            "main"
+                            "footer"
+    }
+
+    .articulo{
+        flex-direction: row;
+        column-gap: 30px;
+        justify-content: space-around;
+    }
+
+}
+
+@media(max-width:800px){
+    .articulo{
+        flex-direction: column;
+       
+    }
+
+}
+
+
+/*-------------------------------------------------*/
+
+
+article{
+    padding-left: 30px;
+    padding-bottom: 70px;
+    background-color: rgb(238, 238, 238);
+}
+
+article iframe{
+    
+    width: 80%;
+}
+
+aside div{
+
+    
+    text-align: center;
+    
+}
+aside div p{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.anuncio{
+    background-image: linear-gradient(to right, rgb(23, 107, 135), black);
+    width: 80%;
+    color: rgb(238, 238, 238);
+    font-size: 30px;
+    text-align: center;
+    
+    
+    
+}
+
+.anuncio p{
+    padding: 30px;
+}
+
+.infoContacto{
+margin-top: 40px;
+}
+
+.infoContacto span{
+    font-weight: 600;
+    }
+/* ---------------------------------------------------------------------------- */
+/* -----------------------------------Carrusel--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.carrusel{
+    
+    width: 80%;
+    max-width: 50em;
+    min-width: 15em;
+    overflow: hidden;
+}
+
+.carrusel .imagenes{
+    width: 500%;
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.5s ease;
+    transform: translateX(-20%);
+}
+
+.carrusel img{
+    width: 20%;
+    background-color: rgb(114, 93, 93);
+    min-height: 10vh;
+}
+
+.carrusel .puntos{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(23, 107, 135),rgb(100, 204, 197));
+    padding: 1em;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    list-style: none;
+}
+
+
+.carrusel .punto{
+    background-color: rgb(191, 191, 197);
+    width: 1em;
+    height: 1em;
+    border-radius: 10px;
+}
+
+.carrusel .punto.activo{
+    background-color: rgb(100, 204, 197);
+    
+}

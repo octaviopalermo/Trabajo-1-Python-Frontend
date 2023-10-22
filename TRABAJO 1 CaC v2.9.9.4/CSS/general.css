@@ -1,0 +1,324 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    margin: 0px;
+}
+
+
+.contenedor{
+    display: grid;
+
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------Seccion del encabezado--------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.encabezado{
+
+    
+    
+        background-color: rgb(5, 59, 80);
+        /* transition: background-color 1.5s ease; */
+        opacity: 1;
+        transition: opacity 1.5s ease-in-out;
+
+/*         background-image: linear-gradient(rgb(5, 59, 80),rgb(5, 59, 80)) ;
+        transition: background-image 1.5s ease-in-out; */
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+
+    
+    .encabezado img{
+        width: 170px;
+        transform: scale(1);
+        transition: transform 1s  ease;
+
+    }
+
+    .encabezado img:hover{
+        transform: scale(1.1);
+    }
+    
+    .encabezado h1{
+        font-size: 45px;
+    }
+    
+    .encabezado-centro{
+        display: grid;
+        color: rgb(238, 238, 238);
+    }
+    
+    .encabezado-centro h3{
+        text-align: center;
+    }
+    
+
+/* ---------------------------------------------------------------------------- */
+/* -----------------------Seccion de barra de navegacion----------------------- */
+/* ---------------------------------------------------------------------------- */
+
+/* ----------------------Construccion de la hamburguesa ------------------------ */
+
+#contenedor-barra{
+    display: flex;
+    align-items: center;
+  
+   background-color:rgb(238, 238, 238);
+   
+}
+
+#barra-hamburguesa, #barra-check{
+    display: none;
+
+    
+}
+
+@media(max-width:700px){
+#barra-check:not(:checked) ~ nav{
+    display: none;
+}
+#barra-check:checked ~ nav{
+    display: flex;
+}
+
+
+#barra-hamburguesa{
+    display: block;
+    font-size: 2.2em;
+    font-weight: bold;
+    position: relative;
+    left: 0.5em;
+    
+    
+}
+
+.barra-navegacion{
+    position: absolute;
+    
+  
+    top: 20em;
+}
+.barra-navegacion ul{
+    flex-direction: column;
+    
+    background-image: linear-gradient(rgb(5, 59, 80),rgb(238, 238, 238));
+    border: solid 1px;
+
+    z-index: 2;
+    
+}
+.barra-navegacion ul li {
+    
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    
+}
+#categorias ul li{
+    width: 121%;
+}
+
+
+#categorias {
+    position: relative;
+    bottom: 35px;
+    left: 232px;
+}
+
+
+#barra-hamburguesa:hover{
+color: rgb(23, 107, 135);
+
+}
+}
+
+/* ----------------------------------------------------------------------------------------------------*/
+
+.barra-navegacion{
+    display: flex;
+    justify-content: space-evenly;
+    
+    background-color: rgb(238, 238, 238);
+    align-items: center;
+    height: 3em;
+    /*para que la barra ocupe todo el contenedor cuando el check no aparezca */
+    flex-grow: 1;
+    
+   
+}
+
+.barra-navegacion ul{
+    list-style: none;
+    display: inline-flex;
+
+    
+}
+
+.barra-navegacion ul li{
+    padding: 15px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    border-color: transparent;
+
+
+    
+}
+
+
+
+.barra-navegacion ul li:hover {
+
+    background-color: rgb(203, 203, 203);
+    border-left: solid 1px;
+    border-right: solid 1px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+
+#categorias{
+    display: none;
+    position:absolute;
+  transform: translate(-15px,15px);
+    background-color: gainsboro;
+    /* Para que no se quede abajo de las tarjetas en electrodomesticos.html....z-index */
+    z-index: 2;
+
+
+}
+
+#categorias ul{
+    
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transform: translateX(-6px);
+    
+    
+}
+
+#categorias ul li{
+  
+     position: relative;
+     right: 27%;
+
+    padding: 3px;
+    text-align: center;
+    border: 0px;
+    
+    
+}
+
+
+
+.categoria-boton{
+
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------Seccion del footer--------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+.pie{
+    display: flex;
+
+    background: linear-gradient(to right,rgb(5, 59, 80) , rgb(100, 204, 197));
+    justify-content: space-around;
+    
+    
+    
+}
+.icons{
+    display: flex;
+    column-gap: 15px;
+    
+
+}
+.icons a{
+    color: rgb(238, 238, 238);
+    font-size: 33px;
+}
+.icons a:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------Pantallas mas pequeñas transiciones encabezado--------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+@media(max-width:700px){
+    .encabezado img{
+        transform: scale(0.7);
+        transition: transform 1s ease-in-out;
+    }
+    .encabezado{
+      
+/*         background-color: rgb(23, 107, 135);
+        transition: background-color 1s ease; */
+        opacity: 0.9;
+        transition: opacity 1.5s ease-in-out;
+
+
+        /* Parece que no funciona lo de background-image...*/
+/*         background-image: linear-gradient(rgb(23, 107, 135) , rgb(5, 59, 80) );
+        transition: background-image 1s ease-in-out; */
+        
+    }
+}
+
+@media(max-width:600px){
+    .encabezado img{
+        transform: scale(0);
+        transition: transform 1s ease-in-out;
+        
+    }
+
+
+}
+
+
+
+/* --------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------*/
+
+/* Esto arregla el problema del encabezado que no se acomoda a pantalla chica si no */
+
+/* El overflow hidden para que no aparezca el scroll lateral...no me autoconvenzo */
+/* Por que aparece un scroll si la pagina entera termina en el limite lateral del ancho del celular? */
+@media(max-width:1000px){
+    .contenedor{
+        
+        
+    
+grid-template-columns: 100%;
+overflow: hidden;
+    }
+
+
+
+}

@@ -1,0 +1,141 @@
+body,
+html {
+    text-align: center;
+    height: 100%;
+}
+
+.contenedor-gigante {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    height: 100%;
+    border-bottom: solid 1px;
+
+}
+
+.contenedor-izquierda, .contenedor-derecha {
+
+    background-color: rgb(5, 59, 80);
+}
+
+
+
+.contenedor-formulario-contacto {
+    /* background-color: rgb(100, 204, 197); */
+    background-image: linear-gradient(to right,rgb(23, 107, 135),white);
+    padding: 15px;
+    border-top: solid 3px;
+    border-right: solid 3px;
+    border-left: solid 3px;
+    font-size: large;
+}
+/* rgb(23, 107, 135) rgb(100, 204, 197) */
+
+.formulario-contacto {
+    /* background-color: rgb(23, 107, 135); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    
+
+}
+
+
+.item-contacto {
+    padding: 20px;
+    font-size: larger;
+    
+}
+
+.item-contacto-doble,
+.item-contacto-enviar {
+    grid-column: 1/ span 2;
+    
+}
+
+
+.input-formulario-c {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: large;
+    
+}
+
+.input-formulario-c:focus {
+    box-shadow: 5px 5px 10px rgb(5, 59, 80);
+}
+
+.input-formulario-c:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+
+#asunto-c{
+    width: 50%;
+    height: 75%;
+    text-align: center;
+    
+}
+
+#consulta-c{
+    padding-top: 10px;
+    padding-left: 30px;
+    
+    height: 100px;
+    width: 70%;
+    
+
+}
+
+
+
+@media(max-width:1000px){
+    .contenedor-gigante {
+      
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
+
+    
+    }
+    .formulario-contacto {
+       
+
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .contenedor-formulario-contacto{
+        grid-row:1;
+    }
+
+}
+
+@media(max-width:700px){
+
+    #asunto-c{
+        width: 200px;
+
+    }
+
+    .boton-submit{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+/* rgb(5, 59, 80)
+rgb(100, 204, 197) */ 
+
+
+

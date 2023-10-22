@@ -1,0 +1,77 @@
+body{
+    background-image: linear-gradient(rgb(100, 204, 197),rgb(5, 59, 80));;
+}
+
+
+
+/* Solo para probar first-child :) */
+article>div:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5em 15em;
+    margin: 15px;
+    border-top-left-radius: 170px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 5px;
+
+    column-gap: 30px;
+    font-size: large;
+    
+  /*  background-color: rgb(238, 238, 238); */
+  background-image: linear-gradient(rgb(238, 238, 238)80%,rgb(100, 204, 197));
+}
+
+article h2{
+    font-size: 38px;
+    color: rgb(23, 107, 135);
+}
+
+article img{
+    
+    width: 500px;
+    
+    box-shadow: 5px 5px 5px black;
+}
+
+
+
+.contenedor-artic2{
+    flex-direction: row-reverse;
+}
+
+
+
+@media(max-width:1500px){
+    .contenedor-artic1{
+        flex-direction: column;  
+        row-gap: 30px;
+        
+    }
+}
+@media(max-width:1300px){
+    article>div:first-child{
+        flex-direction: column;  
+        row-gap: 30px;
+        padding: 5em 5em;
+    }
+
+}
+
+@media(max-width:700px){
+    article img{
+        width: 300px;
+    }
+}
+
+/* ------------------------Rotacion de imagenes-----------------*/
+.articulo1 img, .articulo3 img {
+    transform: rotateZ(-2deg);
+}
+
+.articulo2 img{
+    transform: rotateZ(2deg);
+} 
+
+
+

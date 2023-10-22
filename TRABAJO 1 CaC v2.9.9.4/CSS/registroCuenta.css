@@ -1,0 +1,182 @@
+.contenedor-formulario {
+    display: none;
+    position: fixed;
+   top: 40%;
+   left: 40%;
+   transform: translate(-50%, -50%);
+
+    z-index: 1;
+    margin: 5em;
+    padding: 15px;
+    border: solid;
+    border-radius: 25px;
+
+    width: 70%;
+
+    background-image: linear-gradient(to bottom, rgb(23, 107, 135), white);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 10px black;
+
+    z-index: 3;
+
+}
+
+.contenedor-formulario h1 {
+    color: rgb(238, 238, 238);
+    text-decoration: underline;
+
+}
+
+
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+
+    font-size: large;
+
+
+
+}
+
+
+
+.form-item {
+
+
+    padding: 20px;
+    min-width: 15em;
+}
+
+.form-item-7 {
+
+
+    grid-column: 1 / span 2;
+    margin: auto;
+    padding: 15px;
+    min-width: 15em;
+
+}
+
+.boton-submit {
+
+    min-width: 15em;
+    height: 3em;
+    border-radius: 10px;
+    background-color: rgb(5, 59, 80);
+    color: rgb(238, 238, 238);
+    font-size: large;
+    border-color: rgb(238, 238, 238);
+    border: solid 10px,
+}
+
+.boton-submit:hover {
+    background-color: rgb(23, 107, 135);
+    animation: 1s boton-enviar;
+}
+
+
+
+
+
+@keyframes boton-enviar {
+    0% {
+        transform: scaleX(1);
+        background-color: rgb(23, 107, 135);
+        border-radius: 10px;
+    }
+
+    50% {
+        transform: scaleX(1.1);
+        background-color: rgb(100, 204, 197);
+        border-radius: 25px;
+    }
+
+    100% {
+        transform: scaleX(1);
+        background-color: rgb(23, 107, 135);
+        border-radius: 10px;
+    }
+}
+
+.input-formulario {
+
+    border-radius: 5px;
+    border-color: rgb(100, 204, 197);
+    width: 70%;
+    height: 70%;
+
+}
+
+.input-formulario:hover {
+    border-color: rgb(23, 107, 135);
+    animation: input 1s;
+
+}
+
+@keyframes input {
+    0% {
+        background-color: white
+    }
+
+    50% {
+        background-color: rgb(100, 204, 197)
+    }
+
+    100% {
+        background-color: white
+    }
+}
+
+
+@media(max-width:850px){
+    .formulario {
+
+       grid-template-columns: 1fr;
+    
+    }
+    .form-item-7 {
+
+
+        grid-column: 1;
+
+    
+    
+    }
+
+}
+
+
+#titulo-y-cruz{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cruz{
+    color: rgb(238, 238, 238);
+    font-weight: 900;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: rgb(5, 59, 80);
+    padding: 3px 10px
+    
+}
+
+#cruz:hover{
+    background-color: rgb(23, 107, 135);
+    color: white;
+}
+
+#cruz:active{
+    background-color:rgb(2, 22, 30);
+    color: rgb(23, 107, 135);
+}
+
+
+
+
+
+
